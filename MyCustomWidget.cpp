@@ -16,6 +16,49 @@ MyCustomWidget::MyCustomWidget(QWidget *parent) :
     mPix = QPixmap(QWidget::size());
     mPix.fill(Qt::white);
 
+    QScrollBar(this);
+
+    //set everything to false as nothing has started yet
+    mousePressed = false;
+    drawStarted = false;
+
+    //default is line
+    selectedTool = 2;
+
+    myPenColor = Qt::blue;
+    myPenWidth = 1;
+
+    //connect(ui.)
+}
+
+MyCustomWidget::MyCustomWidget(QSize mdiSize)
+{
+    mPix = QPixmap(mdiSize);
+    mPix.fill(Qt::white);
+
+    //set everything to false as nothing has started yet
+    mousePressed = false;
+    drawStarted = false;
+
+    //default is line
+    selectedTool = 2;
+
+    myPenColor = Qt::blue;
+    myPenWidth = 1;
+
+    //connect(ui.)
+}
+
+MyCustomWidget::MyCustomWidget(QString imagePath)
+{
+    mPix = QPixmap(imagePath);
+    //mPix.scaled(mPix.width() / 4, mPix.height() / 4, Qt::IgnoreAspectRatio);
+
+    QImage tempImage;
+    tempImage.load(imagePath);
+    QSize imageSize = tempImage.size();
+    this->setMinimumSize(imageSize);
+
     //set everything to false as nothing has started yet
     mousePressed = false;
     drawStarted = false;

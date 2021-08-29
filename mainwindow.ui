@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>538</width>
-    <height>437</height>
+    <width>870</width>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,92 +15,42 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <layout class="QFormLayout" name="formLayout">
-      <property name="fieldGrowthPolicy">
-       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+    <item row="0" column="2">
+     <widget class="QLCDNumber" name="lcdNumber"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Next</string>
       </property>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/cursor.png</normaloff>:/icons/cursor.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/lastic.png</normaloff>:/icons/lastic.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/pipette.png</normaloff>:/icons/pipette.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/loupe.png</normaloff>:/icons/loupe.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="3">
+     <widget class="QMdiArea" name="myMDI"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(64, 191, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset theme="save"/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
        <widget class="QPushButton" name="pushButton_6">
         <property name="enabled">
          <bool>true</bool>
@@ -120,8 +70,8 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="btnLine">
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -136,11 +86,11 @@
         </property>
         <property name="icon">
          <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/line.png</normaloff>:/icons/line.png</iconset>
+          <normaloff>:/icons/lastic.png</normaloff>:/icons/lastic.png</iconset>
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item>
        <widget class="QPushButton" name="btnRectangle">
         <property name="enabled">
          <bool>true</bool>
@@ -160,8 +110,8 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
-       <widget class="QPushButton" name="btnEllipse">
+      <item>
+       <widget class="QPushButton" name="btnLine">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -176,11 +126,11 @@
         </property>
         <property name="icon">
          <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/ellipse.png</normaloff>:/icons/ellipse.png</iconset>
+          <normaloff>:/icons/line.png</normaloff>:/icons/line.png</iconset>
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item>
        <widget class="QPushButton" name="pushButton_10">
         <property name="enabled">
          <bool>true</bool>
@@ -200,8 +150,8 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="1">
-       <widget class="QPushButton" name="pushButton_11">
+      <item>
+       <widget class="QPushButton" name="btnEllipse">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -216,54 +166,11 @@
         </property>
         <property name="icon">
          <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/text.png</normaloff>:/icons/text.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QPushButton" name="pushButton_12">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/spray.png</normaloff>:/icons/spray.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QPushButton" name="pushButton_13">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="paintResource.qrc">
-          <normaloff>:/icons/fill.png</normaloff>:/icons/fill.png</iconset>
+          <normaloff>:/icons/ellipse.png</normaloff>:/icons/ellipse.png</iconset>
         </property>
        </widget>
       </item>
      </layout>
-    </item>
-    <item row="0" column="1">
-     <widget class="QMdiArea" name="myMDI"/>
     </item>
    </layout>
   </widget>
@@ -272,8 +179,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>538</width>
-     <height>21</height>
+     <width>870</width>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAdd_somethig">
@@ -286,10 +193,8 @@
    </widget>
    <widget class="QMenu" name="menuDraw">
     <property name="title">
-     <string>Draw</string>
+     <string>Pen</string>
     </property>
-    <addaction name="actionLine"/>
-    <addaction name="actionRect"/>
     <addaction name="actionPen_Color"/>
     <addaction name="actionPen_Width"/>
    </widget>

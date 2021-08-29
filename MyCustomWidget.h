@@ -13,6 +13,8 @@ class MyCustomWidget : public QWidget
 
 public:
     explicit MyCustomWidget(QWidget *parent = 0);
+    MyCustomWidget(QSize mdiSize);
+    MyCustomWidget(QString imagePath);
     bool mousePressed;
     bool drawStarted;
     int selectedTool;
